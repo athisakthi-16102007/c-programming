@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int bas,het,sd1,sd2,sd3;
+    scanf("%d\n%d\n%d\n%d\n%d\n",&bas,&het,&sd1,&sd2,&sd3);
+    float s= (float)1/2*bas*het;
+    float f= (float)sd1+sd2+sd3;
+    printf("Area of Triangle is %.2f\n",s);
+    printf("Perimeter of Triangle is %.2f",f);
+    return 0;
+}
