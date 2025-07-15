@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+#include <string.h>
+
+int main() {
+
+    char str[1000];
+
+    // Read the input string (including spaces if needed)
+
+    fgets(str, sizeof(str), stdin);
+
+    // Remove newline character if present
+
+    size_t len = strlen(str);
+
+    if (len > 0 && str[len - 1] == '\n') {
+
+        str[len - 1] = '\0';
+
+        len--;
+
+    }
+
+    // Print the string in reverse
+
+    for (int i = len - 1; i >= 0; i--) {
+
+        putchar(str[i]);
+
+    }
+
+    putchar('\n'); // Newline after output
+
+    return 0;
+
+}
