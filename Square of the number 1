@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+// Non-static method = just use normal function
+
+int square(int n) {
+
+    return n * n;
+
+}
+
+int main() {
+
+    int n;
+
+    scanf("%d", &n);
+
+    if (n >= 1 && n <= 9) {
+
+        int result = square(n);
+
+        // Exact output format
+
+        printf("Square of %d is %d", n, result);
+
+    } else {
+
+        printf("Invalid Input");
+
+    }
+
+    return 0;
+
+}
